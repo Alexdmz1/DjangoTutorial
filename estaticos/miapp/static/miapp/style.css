@@ -1,0 +1,94 @@
+/* Variables de color */
+:root {
+    --color-principal: #2a4d69;   /* Azul oscuro para fondos principales */
+    --color-secundario: #4b86b4;  /* Azul más claro para secciones */
+    --color-acento: #fe4a49;      /* Naranja para contrastes y enlaces activos */
+    --color-texto: #f4f4f9;       /* Color de texto claro */
+    --color-fondo: #f4f4f9;       /* Fondo general claro */
+    --color-footer: #1e1e24;      /* Fondo del pie de página */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del cuerpo */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    background-color: var(--color-secundario);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Estilo del pie de página */
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Enlaces generales */
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-acento);
+}
+

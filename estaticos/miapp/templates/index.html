@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Base{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'miapp/style.css' %}">
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Mi Aplicación Django</h1>
+        {% include 'menu.html'%}
+    </header>
+    
+    <main>
+        
+        {% block content %}
+        <!-- Contenido de las subplantillas irá aquí -->
+        {% endblock %}
+       
+    </main>
+
+     {% include 'footer.html'%}
+     {% block scripts %}{% endblock %}
+</body>
+</html>
+
